@@ -1,3 +1,5 @@
+// Grab the save-el paragrah and store it in a variable called saveEl
+let saveEl = document.getElementById("save-el");
 let countEl = document.getElementById("count-el");
 let count = 0;
 
@@ -9,5 +11,10 @@ function increment() {
 }
 
 function save() {
+    // create variable that contain count and dash seperator
+    let countStr = " " + count + " - ";
+    // Render the variable in the saveEl using innertext
+    saveEl.innerText += countStr;
+
     console.log(count);
 }
