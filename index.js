@@ -12,6 +12,6 @@ function save() {
     saveEl.textContent += countStr;
     // set count value to 0
     countEl.textContent = 0;
-    // also setting the count variable to 0 to reset the number when we click on save button
+    // also setting the count variable to 0 to reset the counter number once we click on save button
     count = 0;
 }
